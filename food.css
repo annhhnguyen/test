@@ -1,0 +1,145 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f7f3ef; /* nền sáng */
+  color: #2c2c2c; /* chữ tối rõ */
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* NAVBAR */
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+nav.scrolled {
+  background-color: #fdf3e7;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #d35400;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+/* SECTION CHUNG */
+section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #d35400;
+  border-bottom: 2px solid #f0b27a;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #e67e22;
+}
+
+.city {
+  margin-bottom: 40px;
+}
+
+/* PHẦN ĐỒ ĂN */
+.food {
+  background-color: #fff8f0;
+  border-left: 6px solid #f5a623;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.food:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-top: 8px;
+  border: 2px solid #eee;
+}
+
+/* LIÊN KẾT */
+a {
+  color: #d35400;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* BACK TO TOP BUTTON */
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#backToTop:hover {
+  background-color: #d35400;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}

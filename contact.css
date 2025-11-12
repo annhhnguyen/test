@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: linear-gradient(to right, #0099cc, #66ccff);
+  color: white;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+#navbar a:hover,
+#navbar .active {
+  background-color: #0099cc;
+}
+
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.contact-info,
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 400px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: #0099cc;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0099cc;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0077aa;
+}
